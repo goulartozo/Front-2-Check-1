@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="./img/logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Imóveis</title>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="./img/logo.png" />
+      <h1>Imobiliária DH</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="form">
+          <div>
+            <h2>Adicione um Imóvel:</h2>
+          </div>
+          <div>
+            <label for="local">Digite o endereço:</label>
+            <input
+              type="text"
+              id="local"
+              class="info"
+              minlength="4"
+              size="10"
+              maxlength="50"
+              required
+            />
+            <small id="localValidacao"></small>
+          </div>
+
+          <div>
+            <label for="urlImg">Insira a foto (URL):</label>
+            <input id="urlImg" class="info" type="url" required />
+          </div>
+
+          <div>
+            <label for="urlImg">Descrição do imóvel:</label>
+            <textarea
+              name=""
+              id="descricaoImovel"
+              maxlength="200"
+              class="info"
+              rows="5"
+              colums="20"
+              wrap="hard"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="numeroBanheiros">N° de banheiros:</label>
+            <input id="numeroBanheiros" class="info" type="number" required />
+          </div>
+
+          <button disabled type="text" class="submit" onclick="inserirCard()">
+            Adicionar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div id="card"></div>
+    </aside>
+
+    <footer>
+      <a href="https://www.linkedin.com/in/douglas-goularte-b0a838227/"
+        >Douglas Goularte</a
+      >
+      <a href="https://www.linkedin.com/in/helter-emanoel-219a5a144/"
+        >Helter Emanoel</a
+      >
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
